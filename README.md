@@ -1,6 +1,6 @@
 # Format url
 
-Format url for "net/http.ServeMux.HandleFunc"
+Format url for `net/http.ServeMux.HandleFunc`
 
 Both returned urls should be provided to HandleFunc function
 

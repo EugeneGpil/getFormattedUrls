@@ -75,7 +75,7 @@ some/route/
 
 ## Dummy example
 
-```
+```go
 package main
 
 import (

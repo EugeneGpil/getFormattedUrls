@@ -6,6 +6,7 @@ Both returned urls should be provided to HandleFunc function
 
 You should use this package to prevent "forget trailing slash" error
 when you trying to access your app route
+
 For example
 ```
             no trailing slash 
@@ -32,6 +33,7 @@ http://test.local/some/route
 ```
 
 And use it to prevent "forget first slash" when providing url for HandlerFunc function
+
 For example
 ```
 no slash

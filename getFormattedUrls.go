@@ -30,7 +30,7 @@ package getFormattedUrls
 
 func Run(url string) (string, string) {
 	if len(url) == 0 {
-		return "", "/"
+		return "/", "/"
 	}
 
 	urlWithFirsSlash := addFirstSlash(url)

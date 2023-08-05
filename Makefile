@@ -9,3 +9,12 @@ exec-root:
 
 stop:
 	docker compose stop
+
+test:
+	docker composer run golang go test ./...
+
+
+# inside container
+
+test:
+	go test ./...

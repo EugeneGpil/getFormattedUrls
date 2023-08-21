@@ -28,6 +28,6 @@ import "github.com/EugeneGpil/getFormattedUrls/app"
 // Input "some/route/".		Output "/some/route", "/some/route/"
 // Input "/some/route/".	Output "/some/route", "/some/route/"
 
-func Run(url string) (string, string) {
+func Run(url string) []string {
 	return app.Run(url)
 }

@@ -1,8 +1,10 @@
 package app
 
-func Run(url string) (string, string) {
-	if len(url) == 0 {
-		return "/", "/"
+func Run(url string) []string {
+	if url == "" || url == "/" {
+		return []string{
+			"/",
+		}
 	}
 
 	urlWithFirsSlash := addFirstSlash(url)
@@ -11,7 +13,10 @@ func Run(url string) (string, string) {
 
 	urlWithSlash := urlWithoutLastSlash + "/"
 
-	return urlWithoutLastSlash, urlWithSlash
+	return []string{
+		urlWithoutLastSlash,
+		urlWithSlash,
+	}
 }
 
 func addFirstSlash(url string) string {
